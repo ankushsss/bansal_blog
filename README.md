@@ -5,9 +5,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 FIRST INSTALL ALL DEPENDENCY USING:
 npm installl
 
-NPM commands for run project:-
-npm run dev  use for run in local,
-npm run build use for creating build folder,
+## NPM commands for run project:-
+npm run dev  use for run in local
+
+npm run build use for creating build folder
+
 npm run start use for run build folder in local 
 
 server is running on port 3000  
