@@ -33,7 +33,6 @@ export default function BlogForm() {
     const addBlog = ()=>{
         try{
            axios.post("/api/blog",blog).then((userData:any)=>{
-            console.log(userData)
             setAllrtMassg({
                 open:true,
                 mssg:"Blog Add success",

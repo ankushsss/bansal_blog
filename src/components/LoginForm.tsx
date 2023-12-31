@@ -29,7 +29,6 @@ export default function LoginForm() {
     const loginUser = ()=>{
         try{
            axios.post("/api/login",user).then((userData:any)=>{
-            console.log(userData)
             localStorage.setItem("token",userData.data.token)
             localStorage.setItem("name",userData.data.user.fullName)
             setAllrtMassg({

@@ -12,12 +12,11 @@ export default function Page({params}:any) {
   },[])
   let fetchData = () => {
     axios.post("/api/blogdata").then((res:any) => {
-      console.log(res)
-      console.log(res.data.blogs.filter((postId:any)=> postId._id == params.blogid),"jklll")
+    
       setPost(res.data.blogs.filter((postId:any)=> postId._id == params.blogid)[0])
     })
   }
-  console.log(params)
+ 
   return (<div style={{display:"flex",justifyContent:"center"}}><article  className="flex max-w-xl flex-col items-start justify-between" style={{ width: "340px",cursor:"pointer",}}>
   <div style={{ height: "40px", width: "100%", overflow: "hidden" }}><img src="https://images.unsplash.com/photo-1521575107034-e0fa0b594529?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9zdHxlbnwwfHwwfHx8MA%3D%3D" /></div>
 

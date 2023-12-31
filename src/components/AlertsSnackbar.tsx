@@ -6,7 +6,7 @@ const AlertsSnackbar = ({type,mssg,open,alrtMssg,setAllrtMassg}:any) => {
         if(alrtMssg.open)
         {
           setTimeout(()=>{
-            console.log("hiii")
+          
             setAllrtMassg({...alrtMssg,open:false})
           },100000)
         }

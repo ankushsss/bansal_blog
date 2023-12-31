@@ -40,7 +40,6 @@ export default function Blogs() {
 
   let fetchData = () => {
     axios.post("/api/blogdata", { page }).then((res) => {
-      console.log(res)
       setPosts(res.data.blogs)
       setPage(page + 1);
       setHasMore(res.data.blogs.length > 0);

@@ -30,7 +30,6 @@ export default function Signup() {
     const register = ()=>{
         try{
            axios.post("/api/users",user).then((userData:any)=>{
-            console.log(userData)
             setAllrtMassg({
                 open:true,
                 mssg:"User add success",
