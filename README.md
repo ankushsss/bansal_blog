@@ -14,6 +14,24 @@ npm run start use for run build folder in local
 
 server is running on port 3000  
 
+## login email and password
+
+ email:-ankushsss99@gmail.com
+ password:-756624
+ 
+ https://bansal-blog.vercel.app/login
+
+## If this email and password is not working then create your account using sign up page 
+https://bansal-blog.vercel.app/signup
+
+## After login we have a option to create blog
+  note:- if user is not logged in then create blog page automatical redirect the user to login page 
+https://bansal-blog.vercel.app/blogcreate
+
+
+
+
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
