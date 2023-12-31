@@ -2,17 +2,35 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+## FIRST INSTALL ALL DEPENDENCY USING:
+npm install
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## NPM commands for run project:-
+npm run dev  use for run in local
+
+npm run build use for creating build folder
+
+npm run start use for run build folder in local 
+
+server is running on port 3000  
+
+## login email and password
+
+ email:-ankushsss99@gmail.com
+ password:-756624
+ 
+ https://bansal-blog.vercel.app/login
+
+## If this email and password is not working then create your account using sign up page 
+https://bansal-blog.vercel.app/signup
+
+## After login we have a option to create blog
+  note:- if user is not loggedin then it automatic redirecte the user to the blog creation page
+  
+https://bansal-blog.vercel.app/blogcreate
+
+
+## for more updates 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
