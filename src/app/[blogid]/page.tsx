@@ -11,13 +11,14 @@ export default function Page({params}:any) {
     fetchData()
   },[])
   let fetchData = () => {
-    axios.post("/api/blogdata").then((res:any) => {
-       console.log(res?.data?.blogs.filter((postId:any)=> postId?._id == params?.blogid)[0])
-      setPost(res?.data?.blogs.filter((postId:any)=> postId?._id == params?.blogid)[0])
+    axios.post("/api/singleBlog",{id:params?.blogid}).then((res:any) => {
+       console.log(res.data)
+      setPost(res?.data?.blog)
     })
   }
  
-  return (<div style={{display:"flex",justifyContent:"center"}}><article  className="flex max-w-xl flex-col items-start justify-between" style={{ width: "340px",cursor:"pointer",}}>
+  return (<div style={{display:"flex",justifyContent:"center"}}>
+  { post? <article  className="flex max-w-xl flex-col items-start justify-between" style={{ width: "340px",cursor:"pointer",}}>
   <div style={{ height: "40px", width: "100%", overflow: "hidden" }}><img src="https://images.unsplash.com/photo-1521575107034-e0fa0b594529?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9zdHxlbnwwfHwwfHx8MA%3D%3D" /></div>
 
   <div className="flex items-center gap-x-4 text-xs">
@@ -51,5 +52,14 @@ export default function Page({params}:any) {
       <p className="text-gray-600">user</p>
     </div>
   </div>
-</article></div>)
+</article>:<div role="status" className="max-w-sm animate-pulse">
+            <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+            <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+            <span className="sr-only">Loading...</span>
+        </div>}
+</div>)
 }
