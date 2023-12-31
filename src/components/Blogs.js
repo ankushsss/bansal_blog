@@ -74,7 +74,7 @@ export default function Blogs() {
         >
           <div ref={scrollContainer} onScroll={handleScroll} style={{ overflow: 'auto', height: '77vh', display: "flex", flexWrap: "wrap",justifyContent:"center" }} id="style-3" className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3m">
             {posts.length != 0?posts.map((post) => (
-              <article key={post._id} onClick={()=>router.push(`/${post._id}`)} className="flex max-w-xl flex-col items-start justify-between" style={{ width: "340px",cursor:"pointer"}}>
+              <article key={post._id} onClick={()=>router.push(`/${post._id}`)} className="flex max-w-xl flex-col items-start " style={{ width: "340px",cursor:"pointer"}}>
                 <div style={{ height: "40px", width: "100%", overflow: "hidden" }}><img src="https://images.unsplash.com/photo-1521575107034-e0fa0b594529?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9zdHxlbnwwfHwwfHx8MA%3D%3D" /></div>
 
                 <div className="flex items-center gap-x-4 text-xs">
