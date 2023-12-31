@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 ## FIRST INSTALL ALL DEPENDENCY USING:
-npm installl
+npm install
 
 ## NPM commands for run project:-
 npm run dev  use for run in local
