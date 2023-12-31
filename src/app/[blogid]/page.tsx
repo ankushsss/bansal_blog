@@ -12,7 +12,7 @@ export default function Page({params}:any) {
   },[])
   let fetchData = () => {
     axios.post("/api/singleBlog",{id:params?.blogid}).then((res:any) => {
-       console.log(res.data)
+      //  console.log(res.data)
       setPost(res?.data?.blog)
     })
   }
