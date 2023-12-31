@@ -12,8 +12,8 @@ export default function Page({params}:any) {
   },[])
   let fetchData = () => {
     axios.post("/api/blogdata").then((res:any) => {
-    
-      setPost(res.data.blogs.filter((postId:any)=> postId._id == params.blogid)[0])
+       console.log(res?.data?.blogs.filter((postId:any)=> postId?._id == params?.blogid)[0])
+      setPost(res?.data?.blogs.filter((postId:any)=> postId?._id == params?.blogid)[0])
     })
   }
  
