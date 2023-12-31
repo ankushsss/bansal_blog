@@ -25,12 +25,12 @@ server is running on port 3000
 https://bansal-blog.vercel.app/signup
 
 ## After login we have a option to create blog
-  note:- if user is not logged in then create blog page automatical redirect the user to login page 
+  note:- if user is not loggedin then it automatic redirecte the user to the blog creation page
+  
 https://bansal-blog.vercel.app/blogcreate
 
 
-
-
+## for more updates 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
